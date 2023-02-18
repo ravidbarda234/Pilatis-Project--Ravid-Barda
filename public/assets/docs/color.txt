@@ -1,0 +1,4 @@
+color:
+#C1ADB4- סגול
+#BFBFBE - כחול
+#F0F3F3 - לבן?
