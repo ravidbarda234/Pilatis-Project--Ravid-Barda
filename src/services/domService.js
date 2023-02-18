@@ -1,8 +1,8 @@
 /*** (pages) ***/
 export const HOME_PAGE = document.getElementById("home-page");
 export const ABOUT_PAGE = document.getElementById("about-page");
-export const GLLARY_PAGE = document.getElementById("gallary-page");
-export const LESON_PAGE = document.getElementById("lesson-page");
+export const GALLARY_PAGE = document.getElementById("gallary-page");
+export const LESSON_PAGE = document.getElementById("lesson-page");
 export const CONTACT_PAGE = document.getElementById("contact-page");
 export const LOGIN_PAGE = document.getElementById("login-page");
 export const SIGN_PAGE = document.getElementById("sign-page");

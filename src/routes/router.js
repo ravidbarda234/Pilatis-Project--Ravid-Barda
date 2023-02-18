@@ -16,6 +16,6 @@ export const onChangePage = (page) => {
     if (page === PAGES.LESSON) return (LESSON_PAGE.className = "d-block");
     if (page === PAGES.CONTACT) return (CONTACT_PAGE.className = "d-block");
     if (page === PAGES.LOGIN) return (LOGIN_PAGE.className = "d-block");
-    if (page === PAGES.SIGN_PAGE) return (SIGN_PAGE_PAGE.className = "d-block");
-    if (page === PAGES.HOME) return (HOME_PAGE.className = "d-block");
+    if (page === PAGES.SIGN) return (SIGN_PAGE.className = "d-block");
+    return ERROR_PAGE.className = "d-block";
 }

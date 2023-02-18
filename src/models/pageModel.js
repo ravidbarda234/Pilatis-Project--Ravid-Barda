@@ -3,7 +3,7 @@ const PAGES = {
     ABOUT: "about-page",
     GALLARY: "gallary-page",
     LESSON: "lesson-page",
-    CONATCT: "contact-page",
+    CONTACT: "contact-page",
     LOGIN: "login-page",
     SIGN: "sign-page",
     ERROR: "error-page",
