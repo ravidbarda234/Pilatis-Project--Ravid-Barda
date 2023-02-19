@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.n-f-color{
-    background-color: #C1ADB4;
-}
+
 .center {
     display: flex;
     justify-content: center;
