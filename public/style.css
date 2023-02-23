@@ -14,6 +14,47 @@
     cursor: pointer;
 }
 
+
 main {
     min-height: 87vh;
+    background-image: url(https:cdn.pixabay.com/photo/2018/07/09/14/32/tulips-3526249_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
+
+/* home page */
+.home-main-box{
+background-color:rgba(167, 192, 208, 0.5);
+padding: 50px;
+}
+.home-main{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgba(167, 192, 208, 0.7);
+    gap: 10px;
+    transition: all 500ms ease-in-out;
+}
+.slide-img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+    
+
+
+
+/* gllary */
+.gallary-show-img{
+    transition: all 500ms ease-in-out;
+    opacity: 0.9;
+}
+.gallary-show-img:hover{
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+

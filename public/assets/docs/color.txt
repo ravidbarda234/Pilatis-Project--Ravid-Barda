@@ -2,3 +2,53 @@ color:
 #C1ADB4- סגול
 #BFBFBE - כחול
 #F0F3F3 - לבן?
+
+
+
+ <div id="carouselExampleDark" class="carousel carousel-dark slide"
+                                    style="grid-column: 1/4;">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inneborder cursor">
+                                        <div class="carousel-item active border border-5" data-bs-interval="10000">
+                                            <img src="assets/images/IMG-20230218-WA0050.jpg"
+                                                class="d-block w-100 slide-img" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5></h5>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item  border border-5" data-bs-interval="2000">
+                                            <img src="assets/images/IMG-20230218-WA0029.jpg"
+                                                class="d-block w-100 slide-img" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5></h5>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item border border-5">
+                                            <img src="assets/images/IMG-20230218-WA0052.jpg"
+                                                class="d-block w-100 slide-img" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5></h5>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
