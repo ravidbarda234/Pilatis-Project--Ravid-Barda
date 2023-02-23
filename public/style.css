@@ -42,6 +42,13 @@ padding: 50px;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+.box-main-img{
+    width: 100%;
+    aspect-ratio:8/12;
+    object-fit: cover;
+    padding-top: 50px;
+    
+    }
 
     
 
