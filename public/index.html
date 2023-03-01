@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
     <script src="../src/app.js" type="module"></script>
+    <script src="/src/lightbox-plus-jquery.js"></script>
     <title>שפילאטיס</title>
 </head>
 
@@ -27,17 +30,17 @@
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                     aria-controls="navbarColor01 " aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list text-light"></i>
+                    <i class="bi bi-list .nav-link-color"></i>
                 </button>
                 <div class="collapse navbar-collapse d-flex-md justify-content-between" id="navbarColor01">
                     <div>
                         <ul class="navbar-nav mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page" id="sign-page-link">הרשמה
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
+                                    id="sign-page-link">הרשמה
                                     לאתר</span>
-                            </li>
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page"
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
                                     id="login-page-link">כניסה</span>
                             </li>
                         </ul>
@@ -45,25 +48,26 @@
                     <div>
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page" id="contact-page-link">צור
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
+                                    id="contact-page-link">צור
                                     קשר</span>
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page"
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
                                     id="lesson-page-link">שיעורים</span>
                             </li>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page"
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
                                     id="gallary-page-link">גלריה</span>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link cursor text-light" aria-current="page"
+                                <span class="nav-link cursor .nav-link-color nav-a" aria-current="page"
                                     id="about-page-link">אודות</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <span class="navbar-brand cursor text-light" id="home-page-link">ShaPiltis</span>
+                <span class="navbar-brand cursor .nav-link-color nav-a" id="home-page-link">ShaPiltis</span>
             </div>
         </nav>
     </header>
@@ -189,20 +193,7 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
                         <div class="about-box cursor ">
                             <div class="about-main">
@@ -251,68 +242,75 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
 
                         <div class="row cursor gallary-box">
+
                             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                                <img src="assets/images/IMG-20230218-WA0018.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0018.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0018.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
 
-                                <img src="assets/images/IMG-20230218-WA0002.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0002.jpg" data-lightbox="pilatis"
+                                    data-title="Caption2"><img src="assets/images/IMG-20230218-WA0002.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis"></a>
+
                             </div>
 
                             <div class="col-lg-4 mb-4 mb-lg-0">
-                                <img src="assets/images/lP3zX25E9A0iPMvmYpE67wRecmIwAdVgKAEw29Qg5Ww=_plaintext_638123112754843861.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
-
-                                <img src="assets/images/IMG-20230218-WA0066.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/lP3zX25E9A0iPMvmYpE67wRecmIwAdVgKAEw29Qg5Ww=_plaintext_638123112754843861.jpg"
+                                    data-lightbox="pilatis" data-title="Caption1"><img
+                                        src="assets/images/lP3zX25E9A0iPMvmYpE67wRecmIwAdVgKAEw29Qg5Ww=_plaintext_638123112754843861.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
+                                <a href="assets/images/IMG-20230218-WA0066.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0066.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
                             </div>
-
                             <div class="col-lg-4 mb-4 mb-lg-0">
-                                <img src="assets/images/IMG-20230218-WA0049.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
-
-                                <img src="assets/images/IMG-20230218-WA0005.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0049.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0049.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
+                                <a href="assets/images/IMG-20230218-WA0005.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0005.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
                             </div>
                             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                                <img src="assets/images/IMG-20230218-WA0046.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0046.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0046.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
 
-                                <img src="assets/images/IMG-20230218-WA0013.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0013.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0013.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
                             </div>
-
                             <div class="col-lg-4 mb-4 mb-lg-0">
-                                <img src="assets/images/IMG-20230218-WA0008.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
-
-                                <img src="assets/images/IMG-20230218-WA0027.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                <a href="assets/images/IMG-20230218-WA0008.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0008.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
+                                <a href="assets/images/IMG-20230218-WA0027.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0027.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
                             </div>
-
                             <div class="col-lg-4 mb-4 mb-lg-0">
-                                <img src="assets/images/IMG-20230218-WA0044.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
-
-                                <img src="assets/images/IMG-20230218-WA0009.jpg"
-                                    class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
+                                <a href="assets/images/IMG-20230218-WA0044.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0044.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
+                                <a href="assets/images/IMG-20230218-WA0009.jpg" data-lightbox="pilatis"
+                                    data-title="Caption1"><img src="assets/images/IMG-20230218-WA0009.jpg"
+                                        class="w-100 shadow-1-strong rounded mb-4 gallary-show-img" alt="pilatis">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -328,26 +326,15 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
+                        <div class="video-lesson-con d-flex">
+                            wfG
+                        </div>
                     </div>
-                </div>
-                <div class="video-lesson-con">
 
                 </div>
+
             </div>
         </div>
         <div id="contact-page" class="d-none container">
@@ -359,21 +346,18 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
+                        <br>
+                        <h3> אני כאן, לכל שאלה</h3>
+                        <form id="form" class="topBefore" style="direction: rtl;">
+
+                            <input id="name" type="text" placeholder="שם פרטי ושם משפחה">
+                            <input id="email" type="text" placeholder="דואר אלקטרוני">
+                            <textarea id="message" type="text" placeholder="הודעה"></textarea>
+                            <input id="submit" type="submit" value="שלח" onclick="">
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -387,20 +371,7 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
                     </div>
                 </div>
@@ -416,20 +387,7 @@
                         <div class="logo center">
                             <img class="" src="assets/images/Ravid.png" alt="" style="width: 8vw;">
                         </div><br>
-                        <div>
 
-                            <h6 class="cursor center"> שיעורי אונליין</h6>
-                            <h6 class="cursor center "> 052 - 406- 1414</h6>
-
-
-                            <div class="social-media-50  text-center">
-
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-whatsapp"></a>
-
-                            </div>
-                        </div>
                         <hr>
                     </div>
                 </div>
@@ -453,7 +411,7 @@
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-whatsapp"></a>
             <div class="pt-1">
-                <span class="text-light pb-4">all rights reserved to ShaPiltis &copy;</span>
+                <span class=".nav-link-color pb-4">all rights reserved to ShaPiltis &copy;</span>
             </div>
         </div>
     </main>
